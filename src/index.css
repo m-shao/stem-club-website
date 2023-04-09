@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* hero graphic animation */
+
+#Specimen{
+  animation: bob-up-down 1.5s ease-in-out infinite alternate;
+}
+
+#Bubble1{
+  animation: float 1s linear 0.3s infinite;
+}
+#Bubble2{
+  animation: float-less 1.3s linear 0.3s infinite;
+}
+#Bubble3{
+  animation: float 1.6s linear 0.3s infinite;
+}
+#Bubble4{
+  animation: float 2s linear 0.3s infinite;
+}
+#Bubble11{
+  animation: float 1.3s linear 0.3s infinite;
+}
+#Bubble12{
+  animation: float 2s linear 0.3s infinite;
+}
+#Bubble13{
+  animation: float-less 1.2s linear 0.3s infinite;
+}
+#Bubble14{
+  animation: float 1s linear 0.3s infinite;
+}
+
+#DNA{
+  animation: bob-up-down-more 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes bob-up-down{
+  from{
+      transform: translateY(-2%);
+  }
+  to{
+      transform: translateY(0%);
+  }
+}
+
+@keyframes bob-up-down-more{
+  from{
+      transform: translateY(-4%);
+  }
+  to{
+      transform: translateY(0%);
+  }
+}
+
+@keyframes float{
+  from{
+      transform: translateY(0%);
+  }
+  to{
+      transform: translateY(-12%);
+  }
+}
+
+@keyframes float-less{
+  from{
+      transform: translateY(0%);
+  }
+  to{
+      transform: translateY(-9%);
+  }
+}
