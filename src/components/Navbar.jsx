@@ -17,10 +17,22 @@ function Navbar() {
             </div>
             <div className='md:hidden'>
                 <ul className='flex gap-16'>
-                    <li className=''>Home</li>
-                    <li className=''>About</li>
-                    <li className=''>Events</li>
-                    <li className=''>Contact</li>
+                    <li className='cursor-pointer relative group/item'>
+                        <span>Home</span>
+                        <span className="absolute left-0 bottom-0 w-0 transition-all h-[2px] bg-stem-pink-dark group-hover/item:w-full"></span>
+                    </li>
+                    <li className='cursor-pointer relative group/item'>
+                        <span>About</span>
+                        <span className="absolute left-0 bottom-0 w-0 transition-all h-[2px] bg-stem-pink-dark group-hover/item:w-full"></span>
+                    </li>
+                    <li className='cursor-pointer relative group/item'>
+                        <span>Events</span>
+                        <span className="absolute left-0 bottom-0 w-0 transition-all h-[2px] bg-stem-pink-dark group-hover/item:w-full"></span>
+                    </li>
+                    <li className='cursor-pointer relative group/item'>
+                        <span>Contact</span>
+                        <span className="absolute left-0 bottom-0 w-0 transition-all h-[2px] bg-stem-pink-dark group-hover/item:w-full"></span>
+                    </li>
                 </ul>
             </div>  
         </div>
